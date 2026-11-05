@@ -106,3 +106,12 @@ iconv -f GB2312 -t UTF-8 hanoi_multiple_solutions.cpp > hanoi_multiple_solutions
   不影响程序行为。
 - 二进制中未被汉诺塔逻辑调用的库函数也一并按行为重建，保证内容完整。
 - 更详细的函数地址对照表与数据结构说明见 `逆向分析报告.txt`（GB2312）。
+
+
+## 分享卡片
+
+<img src="images/share-card.png" width="480" alt="90-b1 分享卡片">
+
+- 分享卡片（竖版 1080×1440）：`images/share-card.png`
+- 社交预览图（横版 1280×640）：`images/social-preview.png`
+- 卡片源文件（HTML/CSS，可改字改色后重新截图）：`images/card-poster.html`、`images/card-og.html`

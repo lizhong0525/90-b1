@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>90-b1 分享卡片</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1440px; overflow:hidden; }
+  body {
+    background: radial-gradient(140% 90% at 50% -12%, #151c2a 0%, #0b0e15 55%, #06070a 100%);
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
+    color:#efe9dd;
+    position:relative;
+  }
+  .frame { position:absolute; inset:0; padding:72px 88px 64px; display:flex; flex-direction:column; }
+  .topbar { display:flex; justify-content:space-between; font-size:21px; letter-spacing:4px; color:#7f8797; }
+
+  .scene { position:relative; height:410px; margin-top:16px; }
+  .glow {
+    position:absolute; left:50%; top:-40px; width:700px; height:700px; transform:translateX(-50%);
+    background: radial-gradient(circle, rgba(244,160,90,.18) 0%, rgba(244,160,90,.05) 42%, rgba(244,160,90,0) 70%);
+  }
+  .sun-wrap { position:absolute; left:50%; top:120px; width:320px; height:186px; transform:translateX(-50%); overflow:hidden; }
+  .sun {
+    width:320px; height:320px; border-radius:50%;
+    background: radial-gradient(circle at 50% 40%,
+        #fff3d2 0%, #ffd894 28%, #f9a95f 55%, #e3763f 80%);
+  }
+  .horizon {
+    position:absolute; left:0; right:0; top:305px; height:1px;
+    background: linear-gradient(90deg, rgba(255,205,140,0), rgba(255,205,140,.65) 50%, rgba(255,205,140,0));
+  }
+  .towers { position:absolute; left:50%; top:193px; transform:translateX(-50%); display:flex; gap:78px; }
+  .tower { position:relative; width:150px; height:112px; }
+  .pole { position:absolute; left:50%; bottom:3px; width:4px; height:104px; transform:translateX(-50%);
+          background:linear-gradient(#f6c184, rgba(246,193,132,.18)); border-radius:2px; }
+  .disks { position:absolute; left:0; right:0; bottom:6px; display:flex; flex-direction:column-reverse; align-items:center; gap:5px; }
+  .disk { height:12px; border-radius:6px;
+          background:linear-gradient(180deg, rgba(48,27,13,.92), rgba(26,14,7,.95));
+          box-shadow: inset 0 0 0 1px rgba(255,198,132,.55), 0 0 18px rgba(240,160,90,.30); }
+  .base { position:absolute; left:0; right:0; bottom:0; height:3px;
+          background:linear-gradient(90deg, rgba(255,205,140,0), rgba(255,205,140,.85) 50%, rgba(255,205,140,0)); }
+
+  .eyebrow { margin-top:10px; font-size:23px; letter-spacing:9px; color:#e0a45a; font-weight:600; }
+  .title { margin-top:12px; font-size:66px; font-weight:700; letter-spacing:2px; color:#f7f1e5; }
+  .meta { margin-top:16px; font-size:26px; color:#98a0b0; letter-spacing:2px; }
+  .quote { margin-top:52px; padding-left:32px; border-left:3px solid rgba(224,164,90,.55);
+           font-family:"KaiTi","STKaiti","SimSun",serif; font-size:55px; line-height:1.56; color:#ffd7a1; }
+  .memorial { margin-top:38px; font-size:27px; color:#cdc3b2; letter-spacing:3px; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+            font-size:21px; color:#7f8797; letter-spacing:1px; }
+  .footer .repo { font-family: Consolas, "Courier New", monospace; color:#cbb58d; font-size:23px; letter-spacing:0; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="topbar">
+      <span>REVERSE ENGINEERED</span>
+      <span>C++ · GB2312</span>
+    </div>
+
+    <div class="scene">
+      <div class="glow"></div>
+      <div class="sun-wrap"><div class="sun"></div></div>
+      <div class="horizon"></div>
+      <div class="towers">
+        <div class="tower">
+          <div class="pole"></div>
+          <div class="disks">
+            <div class="disk" style="width:150px"></div>
+            <div class="disk" style="width:110px"></div>
+            <div class="disk" style="width:70px"></div>
+          </div>
+          <div class="base"></div>
+        </div>
+        <div class="tower">
+          <div class="pole"></div>
+          <div class="disks">
+            <div class="disk" style="width:126px"></div>
+            <div class="disk" style="width:84px"></div>
+          </div>
+          <div class="base"></div>
+        </div>
+        <div class="tower">
+          <div class="pole"></div>
+          <div class="disks">
+            <div class="disk" style="width:150px"></div>
+            <div class="disk" style="width:110px"></div>
+            <div class="disk" style="width:70px"></div>
+          </div>
+          <div class="base"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eyebrow">90-b1</div>
+    <div class="title">汉诺塔综合演示程序</div>
+    <div class="meta">逆向还原 · C/C++ · GB2312 · VS2022</div>
+
+    <div class="quote">「吃午饭睡午觉<br>生活还要继续<br>太阳还会升起」</div>
+
+    <div class="memorial">谨以此项目纪念沈坚老师</div>
+
+    <div class="footer">
+      <span class="repo">github.com/lizhong0525/90-b1</span>
+      <span>90-b1.exe · 逆向还原</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>90-b1 OG card</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1280px; height:640px; overflow:hidden; }
+  body {
+    background: radial-gradient(140% 110% at 30% -20%, #151c2a 0%, #0b0e15 55%, #06070a 100%);
+    font-family: "Microsoft YaHei", "SimHei", sans-serif;
+    color:#efe9dd;
+  }
+  .frame { position:absolute; inset:0; padding:48px 72px 42px; display:flex; gap:48px; }
+  .left { flex:1; display:flex; flex-direction:column; min-width:0; }
+  .topbar { display:flex; justify-content:space-between; font-size:14px; letter-spacing:3px; color:#7f8797; }
+  .eyebrow { margin-top:44px; font-size:18px; letter-spacing:8px; color:#e0a45a; font-weight:600; }
+  .title { margin-top:10px; font-size:42px; font-weight:700; letter-spacing:2px; color:#f7f1e5; }
+  .meta { margin-top:12px; font-size:18px; color:#98a0b0; letter-spacing:1px; }
+  .quote { margin-top:28px; padding-left:22px; border-left:3px solid rgba(224,164,90,.55);
+           font-family:"KaiTi","STKaiti","SimSun",serif; font-size:26px; line-height:1.5; color:#ffd7a1; }
+  .memorial { margin-top:22px; font-size:17px; color:#cdc3b2; letter-spacing:2px; }
+  .footer { margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+            font-size:14px; color:#7f8797; letter-spacing:1px; }
+  .footer .repo { font-family: Consolas, "Courier New", monospace; color:#cbb58d; font-size:16px; letter-spacing:0; }
+
+  .right { width:430px; position:relative; flex:none; }
+  .scene { position:absolute; inset:0; }
+  .glow { position:absolute; left:50%; top:-10px; width:640px; height:640px; transform:translateX(-50%);
+          background: radial-gradient(circle, rgba(244,160,90,.22) 0%, rgba(244,160,90,.06) 42%, rgba(244,160,90,0) 70%); }
+  .sun-wrap { position:absolute; left:50%; top:120px; width:290px; height:175px; transform:translateX(-50%); overflow:hidden; }
+  .sun { width:290px; height:290px; border-radius:50%;
+         background: radial-gradient(circle at 50% 40%, #fff3d2 0%, #ffd894 28%, #f9a95f 55%, #e3763f 80%); }
+  .horizon { position:absolute; left:-24px; right:-24px; top:295px; height:1px;
+             background: linear-gradient(90deg, rgba(255,205,140,0), rgba(255,205,140,.6) 50%, rgba(255,205,140,0)); }
+  .towers { position:absolute; left:50%; top:170px; transform:translateX(-50%); display:flex; gap:30px; }
+  .tower { position:relative; width:118px; height:126px; }
+  .pole { position:absolute; left:50%; bottom:3px; width:3px; height:118px; transform:translateX(-50%);
+          background:linear-gradient(#f6c184, rgba(246,193,132,.18)); border-radius:2px; }
+  .disks { position:absolute; left:0; right:0; bottom:6px; display:flex; flex-direction:column-reverse; align-items:center; gap:4px; }
+  .disk { height:10px; border-radius:5px;
+          background:linear-gradient(180deg, rgba(48,27,13,.92), rgba(26,14,7,.95));
+          box-shadow: inset 0 0 0 1px rgba(255,198,132,.55), 0 0 14px rgba(240,160,90,.28); }
+  .base { position:absolute; left:0; right:0; bottom:0; height:2px;
+          background:linear-gradient(90deg, rgba(255,205,140,0), rgba(255,205,140,.8) 50%, rgba(255,205,140,0)); }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="left">
+      <div class="topbar">
+        <span>REVERSE ENGINEERED</span>
+        <span>C++ · GB2312</span>
+      </div>
+      <div class="eyebrow">90-b1</div>
+      <div class="title">汉诺塔综合演示程序</div>
+      <div class="meta">逆向还原 · C/C++ · GB2312 · VS2022</div>
+      <div class="quote">「吃午饭睡午觉生活还要继续<br>太阳还会升起」</div>
+      <div class="memorial">谨以此项目纪念沈坚老师</div>
+      <div class="footer">
+        <span class="repo">github.com/lizhong0525/90-b1</span>
+        <span>90-b1.exe · 逆向还原</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="scene">
+        <div class="glow"></div>
+        <div class="sun-wrap"><div class="sun"></div></div>
+        <div class="horizon"></div>
+        <div class="towers">
+          <div class="tower">
+            <div class="pole"></div>
+            <div class="disks">
+              <div class="disk" style="width:104px"></div>
+              <div class="disk" style="width:76px"></div>
+              <div class="disk" style="width:48px"></div>
+            </div>
+            <div class="base"></div>
+          </div>
+          <div class="tower">
+            <div class="pole"></div>
+            <div class="disks">
+              <div class="disk" style="width:88px"></div>
+              <div class="disk" style="width:58px"></div>
+            </div>
+            <div class="base"></div>
+          </div>
+          <div class="tower">
+            <div class="pole"></div>
+            <div class="disks">
+              <div class="disk" style="width:104px"></div>
+              <div class="disk" style="width:76px"></div>
+              <div class="disk" style="width:48px"></div>
+            </div>
+            <div class="base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
